@@ -1,6 +1,6 @@
 package com.driver.model;
 
-//import lombok.NoArgsConstructor;
+
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -14,7 +14,8 @@ public class ParkingLot {
     private int id;
     private String name;
     private String address;
-@OneToMany(mappedBy = "parkingLot",cascade = CascadeType.ALL)
+
+    @OneToMany(mappedBy = "parkingLot",cascade = CascadeType.ALL)
     private List<Spot> spotlist= new ArrayList<>();
     public ParkingLot() {
 

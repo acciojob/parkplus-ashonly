@@ -87,4 +87,8 @@ public class Spot {
     public void setReservationList(List<Reservation> reservationList) {
         this.reservationList = reservationList;
     }
+    public boolean isOccupied() {
+        return this.occupied;
+    }
+
 }
