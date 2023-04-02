@@ -37,7 +37,6 @@ public class Payment {
     public void setId(int id) {
         this.id = id;
     }
-
     public Boolean getPaymentCompleted() {
         return paymentCompleted;
     }
@@ -54,6 +53,8 @@ public class Payment {
         this.paymentMode = paymentMode;
     }
 
+    public Boolean isPaymentCompleted(){return this.paymentCompleted;}
+
     public Reservation getReservation() {
         return reservation;
     }
@@ -61,4 +62,5 @@ public class Payment {
     public void setReservation(Reservation reservation) {
         this.reservation = reservation;
     }
+
 }
